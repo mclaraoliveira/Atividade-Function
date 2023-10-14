@@ -16,7 +16,7 @@ avaliacao();
 var frase = (nome, idade) => `Seu nome é ${nome} e você tem ${idade} anos!`;
 
 function verificarIdade(idade) {
-    const idadeMinima = 18;
+    var idadeMinima = 18;
 
     if (idade >= idadeMinima && pode === true) {
         return "Pode dirigir.";
@@ -25,7 +25,7 @@ function verificarIdade(idade) {
     }
 }
 
-const resultado = verificarIdade(idade);
+var resultado = verificarIdade(idade);
 
 if (resultado === "Pode dirigir.") {
     alert("Você pode dirigir!");
